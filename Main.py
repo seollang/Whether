@@ -8,7 +8,7 @@ from sklearn.neural_network import MLPClassifier
 
 # 🌐 환경 변수 불러오기
 load_dotenv()
-API_KEY = os.getenv("WEATHER_API_KEY") or st.secrets.get("WEATHER_API_KEY")
+API_KEY = st.secrets["WEATHER_API_KEY"]
 CITY = "Seoul"
 URL = f"http://api.openweathermap.org/data/2.5/weather?q={CITY}&appid={API_KEY}&units=metric"
 
