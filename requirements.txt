@@ -1,0 +1,5 @@
+streamlit
+tensorflow
+requests
+numpy
+python-dotenv
